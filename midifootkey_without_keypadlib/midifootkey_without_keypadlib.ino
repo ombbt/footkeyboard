@@ -89,12 +89,9 @@ void loop() {
     
         if(millis() > 27+splashtimer)
     {
- //     Serial.println("noteon");
- //     Serial.println(maxsplash);
- //     Serial.println("noteoff");
-      MIDI.sendNoteOn(38, maxsplash, 10);
-   //   MIDI.sendNoteOff(38, 0, 10);
-      
+
+      MIDI.sendNoteOn(49, maxsplash, 10);
+        
       maxsplash = 0;
     }
   }
@@ -110,11 +107,9 @@ void loop() {
     
         if(millis() > 27+kicktimer)
     {
- //     Serial.println("noteon");
- //     Serial.println(maxsplash);
- //     Serial.println("noteoff");
-      MIDI.sendNoteOn(37, maxkick, 10);
-  //    MIDI.sendNoteOff(37, 0, 10);
+ 
+      MIDI.sendNoteOn(36, maxkick, 10);
+
       
       maxkick = 0;
     }
